@@ -38,15 +38,16 @@ class PostsController
         if (isset($_POST['btn-regOper'])) {
 
             $operaciones = new Consultar($conexion);
-            $consultar = new Consultar($conexion);
-
+            
             if(strlen($_POST["nombre"]) > 0) {
+                
+                $consultar = new Consultar($conexion);
 
                 $nombre = $_POST["nombre"];
 
                 $imagen = $_FILES['file-ope']['tmp_name'];
                 $archivo = addslashes(file_get_contents($imagen));
-                
+
                 $idUsuario = $consultar->getIdUsuarioActual();
                 $operaciones->registrarDatos($nombre, $idUsuario, $archivo);
                 
@@ -59,6 +60,7 @@ class PostsController
         require VIEWS_PATH . '/usuarios.php';
     
     }
+
 
 
 

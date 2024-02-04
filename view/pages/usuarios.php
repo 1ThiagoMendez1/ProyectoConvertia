@@ -1,12 +1,3 @@
-<?php
-
-    session_start();
-    if (empty($_SESSION["name"])){
-        header("location: ../index.php");
-    }
-
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +18,7 @@
                 <h4 style="color: greenyellow;">SALIR</h4>
             </a>
             <a href="">
-                <h4 style="color: white;">Usuario: <?php echo "{$_SESSION["name"]}"?></h4>
+                <h4 style="color: white;">User Connected: <?php echo "{$_SESSION["name"]}"?></h4>
             </a>
             <div class="logo"></div>
             <h1><span style="color: #3d6864;">CONVERTÍA</span>-<span style="color: #80d186;">INVENTARIO</span></h1>

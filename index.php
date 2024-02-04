@@ -2,6 +2,7 @@
     require 'config/dbConexion.php';
     require 'config/close_session.php';
     require 'controller/rutasController.php';
+    require 'config/sessionStart.php';
 
     define('VIEWS_PATH', __DIR__ . '/view/pages');
     $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -13,6 +14,8 @@
             break;
             
         case '/proyectoconvertia/view/pages/usuarios.php':
+            $session = new sessionStart();
+            $session->session();
             $operaciones = new PostsController();
             $operaciones->insertarOperacion();
             
