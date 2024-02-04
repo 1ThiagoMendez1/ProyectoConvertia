@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view/css/styleInicios.css">
+    <title>IventarioIT</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1>INVENTARIO<span style="color: white;">-IT<span></h1>
+    </header>
+
+    <p></p>
+
+    <form method="POST" class="movLogin">
+
+        <section class="login">
+    
+            <p class="logoInventario"></p>
+    
+            <h2>WELCOME</h2>
+    
+            <div class="inputs">
+    
+                <div class="inText">
+                    <P class="logoUser"></P>
+                    <input type="text" placeholder="User name" name="name">
+                </div>
+    
+                <div class="inPass">
+                    <P class="logoPassword"></P>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+    
+                <div class="inBtn">
+                    <input type="submit" name="btn-login" value="LOGIN">
+                </div>
+    
+            </div>
+    
+        </section>
+    
+    </form>
+    
+    <!-- <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis sunt modi esse numquam, minima dolor et nesciunt aperiam facere minus nemo itaque autem maxime unde adipisci corrupti optio. Totam?</p>
+    </footer> -->
+
+</main>
+
+</body>
+</html>
